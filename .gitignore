@@ -5,5 +5,7 @@
 /backvsfront/backend/node_modules
 /backvsfront/backend/node_modules
 /backvsfront/backend/.env
+/backvsfront/frontend/AngularFrontend/node_modules
+/backvsfront/frontend/AngularFrontend/.gitignore
 
 
