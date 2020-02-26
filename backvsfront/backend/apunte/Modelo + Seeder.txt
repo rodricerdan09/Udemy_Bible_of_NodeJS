@@ -1,0 +1,3 @@
+
+Los seeders nos prepara data doomie para nosotros hacer pruebas, en este caso 
+esa data doomiees para que nuestra API no este totalmente vacia.

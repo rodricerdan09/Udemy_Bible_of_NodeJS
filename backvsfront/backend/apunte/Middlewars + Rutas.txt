@@ -1,0 +1,15 @@
+1) Habilitamos una conexion global hacia MongoDB
+2) en el archivo index.js de la capa server vamos a escribir todo el codigo que maneje 
+nuestras rutas y nuestros middlewares. Cabe destacar que no es la mejor practica hacer 
+todo esto en un solo archivo pero mas adelante se veran mejores practicas para crear 
+API RESTfuls.
+3) Se configuran los middlewares:
+    3.1) Se configura el middleware de JSON para que toda la informacion que viaja a nivel
+         de Request sea tratada como un JSON.
+    3.2) Se configura la carpeta Public para que su contenido sea accesible directamente, 
+         sin que tenga que pasar por un controlador o un API.
+    3.3) Se habilitan los cors que nos va a ayudar a que los request de Angular sean bloqueados.
+Con esto ya deberiamos ser caapaz de ver los svg de forma directa. 
+
+4) En las rutas, todas las variables que coloquemos en nuestro Endpoint van a ser 
+consideradas como params (req.params) y van a ser propiedades de ese objeto

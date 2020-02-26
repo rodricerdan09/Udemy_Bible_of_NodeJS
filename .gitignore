@@ -1,0 +1,9 @@
+/.vscode
+/Section7 - Protocol_HTTP_and_Web_Servers/node_modules
+/mongodb/node_modules
+/mongodb/.env
+/backvsfront/backend/node_modules
+/backvsfront/backend/node_modules
+/backvsfront/backend/.env
+
+

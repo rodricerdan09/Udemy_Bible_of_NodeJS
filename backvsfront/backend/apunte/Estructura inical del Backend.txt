@@ -1,0 +1,36 @@
+Estructura inical del Backend
+La aplicacion Node JS tiene una estructura de carpetas pero en realidad a nivel 
+de arquitectura son CAPAS que cada una de ellas tiene las diferentes responsabilidades
+y archivos que va a conformar en general la API.
+
+En el archivo index.js de config validamos en que ambiente estamos con process.env.NODE_ENV, 
+el objeto Node JS de manera global. La variable de entorno NODE_ENV nos devuelve un string
+que nos indica si nos encontramos en "development" o "production". 
+Los proveedores como Heroku o Azure son los que se encargan de setear la variable NODE_ENV a 
+production, de lo contrario si es distinto de production, seteamos las variables de entorno
+de nuestro archivo .env
+
+Luego exportamos un objeto para que todas las variables de entorno esten en un solo lugar.
+De esta forma si existe un archivo .env y estamos en desarrollo, las variables de entorno 
+se van a cargar y setear en la misma. 
+
+En la capa de models colocamos los modelos de mongoose. Alli exportamos todos los modelos 
+una vez que esten creados.
+
+En la capa seeds van a ir las "semillas" de la aplicacion.
+
+En la capa de server vamos a almacenar la configuracion de nuestro servidor de Express.
+La  la va a tener el archivo 
+index.js del root
+
+El archivo index.js del root va a tener la responsabilidad de inicializar nuestro servidor 
+que viene de la capa server y antes de inicializarlo debemos configurar el cuerpo, que
+lo destructuramos de la carpeta config.
+
+En el archivo package.json si tenemos un comando dentro de scripts que no es nativo debemos
+colocar el comando run antes (EJ: npm run dev).
+
+Public sera la carpeta estatica que va a proveer los archivos.
+
+
+
