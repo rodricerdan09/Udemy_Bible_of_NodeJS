@@ -7,5 +7,5 @@
 /backvsfront/backend/.env
 /backvsfront/frontend/AngularFrontend/node_modules
 /backvsfront/frontend/AngularFrontend/.gitignore
-
+/API_RESTful/node_modules
 

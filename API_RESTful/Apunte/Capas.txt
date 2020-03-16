@@ -1,0 +1,16 @@
+Capa Config: Se crea la configuracion de nuestro entorno. Si el ambiente es distinto de produccion exportamos nuestras variables de entorno.
+De esta manera vamos a tener todas las variables de configuracion en un solo punto.
+Tambien creamos un container para la inyeccion de dependencias. Eso lo logramos gracias a la dependencia de produccion awilix.
+
+Capa StartUp: aqui se crea el archivo container.js y dentro de este archivo 
+nos encargamos de configurar nuestro contenedor de inyeccion de dependencias.
+
+Capa services: Lo que sigue es crear un servicio. Estos servicios se deben importar al archivo container.js
+a traves de su archivo index.js
+
+Capa Controller: un vez que tenemos nuestro servicio creamos nuestro controller.
+
+Capa Routes: Lo siguiente es crear nuestras rutas para enlazarlas con los controladores.
+
+Una vez configuradas las rutas volvemos a nuestra capa StartUp para configurar su index.js ya que
+va a ser la clase que le va a dar inicio a nuestra aplicacion.

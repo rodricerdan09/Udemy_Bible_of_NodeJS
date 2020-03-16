@@ -1,0 +1,27 @@
+Dependencias del proyecto
+
+Express
+Express-async-errors: es un midlware que nos va a ayudar a controlar las excepciones asincronicas.
+awilix: un container para hacer inyeccion de dependencias.
+cors: para configurar nuestras peticiones que van desde el exterior hacia nuestro API.
+compression: nos ayuda a comprimir las peticiones HTTP.
+helmet: nos ayuda con la parte de seguridad. con este solo paquete estamos librando nuestra API de algunos ataques(alrededor de 9).
+bcryptjs: sirve para encriptar las contraseñas.
+jsonwebtoken: para generar los token.
+memory-cache: para la parte de uno de los principios restful que es el cache. vamoa a hacer un caching en memoria.
+mongoose: ODM para conectar a mongoDB.
+swagger-ui-express: para la documentacion de nuestra API.
+----------------------------------------------------------------------------------------------------------------------------
+Dependencias de desarrollo (npm i -D)
+
+dotenv: nos va a servir para configurar las variables de entorno
+nodemon: par anuestro servidor
+mockingoose: libreria que nos ayuda a hacer mocking de nuestros test.
+jest: framework para el testing 
+-----------------------------------------------------------------------------------------------------------------------------
+index.js sera el entry point de la aplicacion.
+npm start: comando para cuando nuestra aplicacion se suba a produccion o se publique en cualquier ambiente.
+npm run dev: comando para nuestra aplicacion en desarrollo.
+
+A cada una de las capas se les crea un index.js para que pueda exponer de manera rapida 
+todas las clases y componentes que posea.
